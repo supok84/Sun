@@ -1,0 +1,115 @@
+.Wrapper{
+    width: 1000px;
+    height: 500px;
+    border: 1px solid black;
+    position: relative;
+	overflow: hidden;
+    
+}
+.Ground{
+    width: 1000px;
+    height: 250px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+}
+.Grass{
+    width: 400px;
+    height: 30px;
+    position: absolute;
+    top: 220px;
+    right: 300px;
+    background-color: green;
+}
+.Sun{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: #FF5700;
+    position: absolute;
+	top: 175px;
+	left: -50px;
+    animation: Move_Sun 15s infinite; 
+	animation-name: Move_Sun;  
+	animation-duration: 15s;
+	animation-timing-function: linear;
+	-webkit-animation: Move_Sun 15s infinite; 
+    -webkit-animation-name: Move_Sun;  
+	-webkit-animation-duration: 15s;
+	-webkit-animation-timing-function: linear;
+	z-index: -1;
+}
+.Sky{
+	width: 1000px;
+    height: 250px;
+    background-color: #5B3E7C;
+    position: absolute;
+    top: 0;
+	z-index: -2;
+    animation: Move_Sky 15s infinite; 
+	animation-name: Move_Sky;  
+	animation-duration: 15s;
+	animation-timing-function: linear;		
+	-webkit-animation: Move_Sky 15s infinite; 
+	-webkit-animation-name: Move_Sky;  
+	-webkit-animation-duration: 15s;
+	-webkit-animation-timing-function: linear;		
+}
+
+/* Standard syntax */
+@keyframes Move_Sun {
+    0% {top: 175px; left:-50px;  width: 150px; height:150px; background-color: #FF5700;}
+    5% {top: 155px; left:5px; width: 140px; height:140px;}
+	10% {top: 135px; left:60px; width: 130px; height:130px;}
+	15% {top: 115px; left:110px; width: 120px; height:120px;}
+	20% {top: 95px; left:160px; width: 110px; height:110px;}
+	25%  {top: 80px; left:210px; width: 100px; height:100px;}
+    30% {top: 65px; left:275px; width: 90px; height:90px;}
+    35% {top: 50px; left:325px; width: 80px; height:80px;}
+	40% {top: 35px; left:375px; width: 70px; height:70px;}
+	45% {top: 18px; left:425px; width: 60px; height:60px;}	
+	50% {top: 0px; left:475px; width: 50px; height:50px;  background-color: #FFF500;}
+	55% {top: 18px; left:505px; width: 60px; height:60px;}
+	60% {top: 35px; left:540px; width: 70px; height:70px;}
+	65% {top: 50px; left:585px; width: 80px; height:80px;}
+	70% {top: 65px; left:635px; width: 90px; height:90px;}
+	75% {top: 80px; left:685px; width: 100px; height:100px;}
+	80% {top: 95px; left:735px; width: 110px; height:110px;}
+	85% {top: 115px; left:785px; width: 120px; height:120px;}
+	90% {top: 135px; left:835px; width: 130px; height:130px;}
+	95%  {top: 155px; left:885px; width: 140px; height:140px;}
+    100% {top: 175px; left:925px; width: 150px; height:150px; background-color: #FF5700;}
+}
+@-webkit-keyframes Move_Sun {
+    0% {top: 175px; left:-50px;  width: 150px; height:150px; background-color: #FF5700;}
+    5% {top: 155px; left:5px; width: 140px; height:140px;}
+	10% {top: 135px; left:60px; width: 130px; height:130px;}
+	15% {top: 115px; left:110px; width: 120px; height:120px;}
+	20% {top: 95px; left:160px; width: 110px; height:110px;}
+	25%  {top: 80px; left:210px; width: 100px; height:100px;}
+    30% {top: 65px; left:275px; width: 90px; height:90px;}
+    35% {top: 50px; left:325px; width: 80px; height:80px;}
+	40% {top: 35px; left:375px; width: 70px; height:70px;}
+	45% {top: 18px; left:425px; width: 60px; height:60px;}	
+	50% {top: 0px; left:475px; width: 50px; height:50px;  background-color: #FFF500;}
+	55% {top: 18px; left:505px; width: 60px; height:60px;}
+	60% {top: 35px; left:540px; width: 70px; height:70px;}
+	65% {top: 50px; left:585px; width: 80px; height:80px;}
+	70% {top: 65px; left:635px; width: 90px; height:90px;}
+	75% {top: 80px; left:685px; width: 100px; height:100px;}
+	80% {top: 95px; left:735px; width: 110px; height:110px;}
+	85% {top: 115px; left:785px; width: 120px; height:120px;}
+	90% {top: 135px; left:835px; width: 130px; height:130px;}
+	95%  {top: 155px; left:885px; width: 140px; height:140px;}
+    100% {top: 175px; left:925px; width: 150px; height:150px; background-color: #FF5700;}
+}
+@keyframes Move_Sky {
+    0% {background-color: #5B3E7C;}
+	50% {background-color: #79BDDE;}
+    100% {background-color: #5B3E7C;}
+}
+@-webkit-keyframes Move_Sky {
+    0% {background-color: #5B3E7C;}
+	50% {background-color: #79BDDE;}
+    100% {background-color: #5B3E7C;}
+}
